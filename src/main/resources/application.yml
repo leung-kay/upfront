@@ -1,0 +1,19 @@
+server:
+  port: 9000
+
+logging:
+  level:
+    root: info
+    com.ruifucredit.cloud.upfront: debug
+
+spring:
+  application:
+    name: ${eureka.instance.appname}
+    
+eureka:
+  instance:
+    appname: upfront-service
+    
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
